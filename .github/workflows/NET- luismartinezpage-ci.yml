@@ -2,14 +2,14 @@ name: NET CI
 
 on:
   push:
-    branches: [ develop, master ]
+    branches: [ develop ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     name: Build NET
     env:
-        APP_NAME: ${{ env.APP_NAME }}
+        APP_NAME: NET - NEW APP
         
     steps:
       - uses: actions/checkout@v2
