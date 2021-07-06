@@ -9,8 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: foo
-      uses: IB-DC/templates@v5
-      with:
+      uses: IB-DC/templates@v6
         who-to-greet: 'Mona the Octocat'
     - run: echo random-number ${{ steps.foo.outputs.random-number }} 
       shell: bash
